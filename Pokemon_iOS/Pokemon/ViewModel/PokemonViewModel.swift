@@ -17,6 +17,7 @@ final class PokemonViewModel: ObservableObject {
     
     @Published var pokemonEntity: PokemonEntity?
     @Published var pokemonListEntity: [PokemonEntity] = []
+    
     @Published var navigateToDetail = false
     @Published var selectedPokemon: PokemonEntity?
     let pokemonlistURL: [URL] = (1...151).map{URL(string: "https://pokeapi.co/api/v2/pokemon/\($0)")!}
